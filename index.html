@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workshopplaner mit KI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>KI-gestützter Workshopplaner</h1>
+    <form id="workshopForm">
+      <label>Thema des Workshops:<br><input type="text" id="theme" required></label><br>
+      <label>Anzahl der Teilnehmer:<br><input type="number" id="participants" required></label><br>
+      <label>Dauer (in Stunden):<br><input type="number" id="duration" required></label><br>
+      <label>Soll der Workshop spielerisch sein?<br>
+        <select id="playful">
+          <option value="ja">Ja</option>
+          <option value="nein">Nein</option>
+        </select>
+      </label><br><br>
+      <button type="submit">Workshop erstellen</button>
+    </form>
+    <div id="output"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
